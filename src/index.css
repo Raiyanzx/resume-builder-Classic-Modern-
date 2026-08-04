@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.rich-text-input:empty:before {
+  content: attr(data-placeholder);
+  color: #94a3b8;
+}
+
+/* Printing goes straight from this page (no popup window), so the exported
+   PDF always matches the on-screen preview exactly. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    padding: 0 !important;
+    background: white !important;
+    overflow: visible !important;
+    max-height: none !important;
+    display: block !important;
+  }
+  .print-page {
+    box-shadow: none !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+  @page {
+    margin: 0;
+    size: A4;
+  }
+}
