@@ -24,7 +24,7 @@ const initialData = {
   linkedin: "www.linkedin.com/in/CR7",
   address: "House:07, Road:07, Lisbon, Portugal-007",
   summary: "Five-time Ballon d'Or winner with extensive experience carrying teams, breaking records, and making defenders question their career choices. Passionate about winning trophies, scoring impossible goals, and reminding everyone that age is just a number.",
-  photo: "CR7.png",
+  photo: "/CR7.png",
   education: [
     { id: nextId(), degree: "Master's in Humbling Defenders", institution: "Sporting CP", field: "Major: ", score: "CGPA 3.1 / 4", start: "2002", end: "2026" },
   ],
